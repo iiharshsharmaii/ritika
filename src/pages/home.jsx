@@ -27,7 +27,7 @@ function Home() {
 
       setTimeout(() => {
         setDivs((prevDivs) => prevDivs.filter(div => div.id !== newDiv.id));
-      }, 10000); // Remove div after 10 seconds
+      }, 6000); // Remove div after 10 seconds
     }, 1000);
 
     return () => clearInterval(intervalId);
