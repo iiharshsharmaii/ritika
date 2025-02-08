@@ -3,6 +3,7 @@ import hearts from '../images/hearts.png';
 import muteIcon from '../images/mute.png'
 import playIcon from '../images/play.png'
 import testMusic from '../music/ending.mp3'
+import { Link } from 'react-router-dom';
 
 function Home() {
 
@@ -48,7 +49,7 @@ function Home() {
   return (
     <>
  <button className='homebtn' onClick={handlePlay}><img src={play} /></button>
- <a href="/valentine">
+ <Link to="/valentine">
       <div className='homepage'>
      
         {divs.map((div) => (
@@ -70,7 +71,7 @@ function Home() {
           <p>HAPPY VALENTINE'S DAY <br /> FROM HARSH</p>
         </div>
       </div>
-      </a>
+      </Link>
       <audio id="background-audio" autoPlay loop hidden>
         <source src={testMusic} type="audio/mp3" />
         Your browser does not support the audio element.
