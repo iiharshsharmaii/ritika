@@ -100,7 +100,7 @@ function Prop() {
           <img src={image} alt="valentine" />
         </div>
       </div>
-      <audio id='untilMusic' autoPlay loop hidden>
+      <audio id='untilMusic' autoPlay loop hidden >
         <source src={until} type="audio/mp3" />
         Your browser does not support the audio element.
       </audio>
